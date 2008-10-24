@@ -21,7 +21,7 @@ class ExperimentsController < ApplicationController
 
 		conf.nested.add_link("Investigators", [:people])
 		#conf.nested.add_link("Protocols", [:protocols])
-		conf.nested.add_link("Samples", [:bio_samples])
+		conf.nested.add_link("Biosamples", [:bio_samples])
 		conf.nested.add_link("Compounds", [:compounds])
 		conf.nested.add_link("Treatments", [:treatments])
 		conf.nested.add_link("Measurements", [:generic_datas])
