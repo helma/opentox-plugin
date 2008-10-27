@@ -12,10 +12,9 @@
       <td>
         <div class="smarts_jme">
           <applet codebase="/plugin_assets/opentox/applets/" code="JME.class" name="JME" archive="JME.jar" width="512" height="360">
-            <param name="options" value="query"> 
-            <param name="options" value="polarnitro" /> 
+            <param name="options" value="query,polarnitro"> 
             <% if @molfile %>
-            <param name="mol" value="<%= @molfile %>"/>
+            <param name="mol" value="<%= @molfile %>">
             <% end %>
           Please enable Java in your browser to use the JME editor.
           </applet>
